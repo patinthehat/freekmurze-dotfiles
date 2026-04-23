@@ -3,3 +3,6 @@ working-directory = /Users/freek/dev/code
 cursor-style = block
 shell-integration-features = no-cursor
 palette = 2=#5ccd86
+unfocused-split-opacity = 0.55
+unfocused-split-fill = #7a7a7a
+split-divider-color = #000000
