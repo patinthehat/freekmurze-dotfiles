@@ -15,15 +15,8 @@ All post operations use the freek.dev Blog Posts API. No browser automation need
 
 ### Authentication
 
-Bearer token in the Authorization header. The token is stored in 1Password (Spatie account, `Employee` vault, item `freek.dev Blog API`, field `credential`).
-
-Read it at runtime, never persist it to disk:
-
-```bash
-TOKEN=$(op read --account spatie.1password.com "op://Employee/freek.dev Blog API/credential")
-```
-
-This requires the `op` CLI to be installed and the user to be signed in (Touch ID will prompt on first use per session).
+Bearer token in the Authorization header.
+Token location: `.secrets/blog-freek-dev.md`
 
 ```
 Authorization: Bearer <token>
