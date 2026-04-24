@@ -13,8 +13,7 @@ const os = require('node:os');
 const readline = require('node:readline');
 
 // Allow overriding API base for tests / self-hosted mocks.
-const API_BASE =
-  process.env.TYPEFULLY_API_BASE || 'https://api.typefully.com/v2';
+const API_BASE = process.env.TYPEFULLY_API_BASE || 'https://api.typefully.com/v2';
 const GLOBAL_CONFIG_DIR = path.join(os.homedir(), '.config', 'typefully');
 const GLOBAL_CONFIG_FILE = path.join(GLOBAL_CONFIG_DIR, 'config.json');
 const LOCAL_CONFIG_DIR = '.typefully';
